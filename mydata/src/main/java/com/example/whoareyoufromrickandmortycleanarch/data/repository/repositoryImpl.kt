@@ -8,7 +8,7 @@ import com.example.whoareyoufromrickandmortycleanarch.domain.utill.Resource
 import javax.inject.Inject
 
 class repositoryImpl @Inject constructor(
-    private val api:MyAPI
+    private val api: MyAPI
 ):repository {
     override suspend fun getRickAndMortyData(id: Int): Resource<RickAndMortyData> {
         return try {

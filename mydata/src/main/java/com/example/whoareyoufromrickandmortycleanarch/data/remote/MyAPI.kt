@@ -7,5 +7,5 @@ interface MyAPI {
     @GET("api/character/{characterId}")
     suspend fun getRickAndMortyDto(
         @Path("characterId") characterId:Int
-    ):RickAndMortyDto
+    ): RickAndMortyDto
 }

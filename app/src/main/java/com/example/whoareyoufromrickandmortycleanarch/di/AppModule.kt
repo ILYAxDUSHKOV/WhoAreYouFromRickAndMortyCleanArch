@@ -15,7 +15,7 @@ import javax.inject.Singleton
 object AppModule {
     @Provides
     @Singleton
-    fun provideRickAndMortyApi():MyAPI{
+    fun provideRickAndMortyApi(): com.example.whoareyoufromrickandmortycleanarch.data.remote.MyAPI {
         return Retrofit.Builder()
             .baseUrl("https://rickandmortyapi.com/")
             .addConverterFactory(GsonConverterFactory.create())

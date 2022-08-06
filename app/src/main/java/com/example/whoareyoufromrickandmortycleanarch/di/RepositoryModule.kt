@@ -14,6 +14,6 @@ abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun bindWeatherRepository(
-        repositoryImpl:repositoryImpl
+        repositoryImpl: com.example.whoareyoufromrickandmortycleanarch.data.repository.repositoryImpl
     ):repository
 }
