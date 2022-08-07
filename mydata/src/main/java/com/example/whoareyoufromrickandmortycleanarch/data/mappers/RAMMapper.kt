@@ -4,18 +4,18 @@ import com.example.whoareyoufromrickandmortycleanarch.data.remote.RickAndMortyDt
 import com.example.whoareyoufromrickandmortycleanarch.domain.rickandmorty.RickAndMortyData
 
 fun RickAndMortyDto.toRickAndMortyData():RickAndMortyData{
-    val name = name
-    val status = status
-    val species = species
-    val type = type
-    val gender = gender
-    val image = image
+    val mapperName = name
+    val mapperStatus = status
+    val mapperSpecies = species
+    val mapperType = type
+    val mapperGender = gender
+    val mapperImage = image
     return RickAndMortyData(
-            name = name,
-            status = status,
-            species = species,
-            type = type,
-            gender = gender,
-            image = image
+            name = mapperName,
+            status = mapperStatus,
+            species = mapperSpecies,
+            type = mapperType,
+            gender = mapperGender,
+            image = mapperImage
         )
 }
